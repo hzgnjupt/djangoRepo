@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load staticfiles %}
+<meta charset="UTF-8">
+<link href="{% static 'chatroom/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'chatroom/css/index.css' %}" rel="stylesheet">
+<title>在线聊天室主页</title>
+</head>
+<body>
+<div class="container">
+    <form class="form-login" role="form">
+        <h2 style="margin-bottom: 3px">欢迎登录</h2>
+        <input type="text" class="form-control" style="margin-bottom: 4px" placeholder="用户名" required autofocus>
+        <input type="password" class="form-control" placeholder="密码" required>
+        <label class="checkbox checkbox-inline" style="margin-bottom: 6px">
+            <input type="checkbox" value="remember-me">记住用户名
+        </label>
+        <button type="submit" class="btn btn-lg btn-primary btn-block">登录</button>
+        <button type="button" class="btn btn-lg btn-primary btn-block">注册</button>
+    </form>
+</div>
+<script src="{% static 'chatroom/js/jquery-2.1.4.js' %}"></script>
+<script src="{% static 'chatroom/js/bootstrap.js' %}"></script>
+</body>
+</html>
